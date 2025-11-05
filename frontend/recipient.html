@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipient Dashboard - MealMatrix</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+  <div class="header-left">
+    <img src="./logo.png" alt="MealMatrix Logo" class="site-logo" />
+    <div class="header-text"><h1>Recipient Dashboard</h1>
+      <p>Request food donations and view your requests</p>
+    </div>
+  </div>
+  <button id="logoutBtn" class="logout-btn"> Logout</button>
+</header>
+
+
+  <main class="form-container">
+    <section class="card glass wide-card">
+      <h2> Available Donations</h2>
+      <button id="refreshDonations" class="btn small-btn"> Refresh</button>
+      <div class="table-wrapper">
+        <table id="availableTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Food</th>
+              <th>Quantity</th>
+              <th>Pickup</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 MealMatrix | Recipient Panel</p>
+  </footer>
+
+  <script src="recipient.js"></script>
+</body>
+</html>

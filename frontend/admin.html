@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - MealMatrix</title>
+  
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+  <div class="header-left">
+    <img src="./logo.png" alt="MealMatrix Logo" class="site-logo" />
+    <div class="header-text">
+      <h1> Admin Dashboard</h1>
+      <p>Manage users, donations, and requests</p>
+    </div>
+  </div>
+  <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
+</header>
+
+  <main class="form-container">
+
+    <!-- USERS -->
+    <section class="card glass wide-card">
+      <div class="section-header">
+        <h2> All Users</h2>
+        <button id="refreshUsers" class="btn small-btn">🔄 Refresh</button>
+      </div>
+      <div class="table-wrapper">
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Created</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- DONATIONS -->
+    <section class="card glass wide-card">
+      <div class="section-header">
+        <h2> All Donations</h2>
+        <button id="refreshDonations" class="btn small-btn">🔄 Refresh</button>
+      </div>
+      <div class="table-wrapper">
+        <table id="donationsTable">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Food Type</th>
+              <th>Quantity</th>
+              <th>Donor</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- REQUESTS -->
+    <section class="card glass wide-card">
+      <div class="section-header">
+        <h2> All Requests</h2>
+        <button id="refreshRequests" class="btn small-btn">🔄 Refresh</button>
+      </div>
+      <div class="table-wrapper">
+        <table id="requestsTable">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Recipient</th>
+              <th>Food</th>
+              <th>Quantity</th>
+              <th>Status</th>
+              <th>Requested On</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 MealMatrix | Admin Panel</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

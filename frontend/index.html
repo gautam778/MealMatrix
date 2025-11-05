@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MealMatrix</title>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header home-header">
+  <div class="logo-container">
+    <img src="./logo.png" alt="Food Donation Tracker Logo" class="site-logo" />
+    <div class="header-text">
+      <h1>MealMatrix</h1>
+      <p>Connecting donors and recipients to reduce food waste</p>
+    </div>
+  </div>
+
+  <nav class="nav-links">
+    <a href="donor.html">Donor</a>
+    <a href="recipient.html">Recipient</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+
+  <main class="form-container">
+    <section class="card glass">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+
+        <select name="role" id="roleSelect" required>
+          <option value="">-- Select Role --</option>
+          <option value="donor">Donor</option>
+          <option value="recipient">Recipient</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <button class="btn" type="submit">Register</button>
+      </form>
+      <p id="registerStatus" class="status"></p>
+    </section>
+
+    <section class="card glass">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <p id="loginStatus" class="status"></p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 MealMatrix </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

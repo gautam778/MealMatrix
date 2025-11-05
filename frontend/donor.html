@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donor Dashboard - MealMatrix</title>
+
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+  <div class="header-left">
+    <img src="./logo.png" alt="MealMatrix Logo" class="site-logo" />
+    <div class="header-text">
+      <h1> Donor Dashboard</h1>
+      <p>Add and manage your food donations</p>
+    </div>
+  </div>
+  <button id="logoutBtn" class="logout-btn"> Logout</button>
+</header>
+
+
+  <main class="form-container">
+    <!-- Add Donation Form -->
+    <section class="card glass">
+      <h2>Add New Donation</h2>
+      <form id="donationForm">
+        <input type="text" name="food_type" placeholder="Type of Food" required />
+        <input type="text" name="quantity" placeholder="Quantity (e.g. 5 kg)" required />
+        <input type="text" name="pickup_location" placeholder="Pickup Location" required />
+        <input type="text" name="mobile" placeholder="Mobile Number" required />
+        <input type="date" name="donation_date" placeholder="Donation Date" />
+        <input type="date" name="expiry_date" placeholder="Expiry Date (optional)" />
+        <textarea name="notes" placeholder="Additional Notes (optional)" rows="3"></textarea>
+        <button type="submit" class="btn">Add Donation</button>
+      </form>
+      <p id="donationStatus" class="status"></p>
+    </section>
+
+    <!-- My Donations Table -->
+    <section class="card glass wide-card">
+      <h2> My Donations</h2>
+      <button id="refreshDonations" class="btn small-btn"> Refresh</button>
+      <div class="table-wrapper">
+        <table id="donationTable">
+          <thead>
+            <tr>
+              <th>Serial No</th>
+              <th>Food Type</th>
+              <th>Quantity</th>
+              <th>Pickup Location</th>
+              <th>Mobile</th>
+              <th>Status</th>
+              <th>Donation Date</th>
+              <th>Expiry Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 MealMatrix | Donor Panel</p>
+  </footer>
+
+  <script src="donor.js"></script>
+</body>
+</html>
