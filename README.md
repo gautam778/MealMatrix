@@ -133,13 +133,3 @@ License: MIT
 ⭐ Support
 If you like this project, give it a ⭐ on GitHub!
 Every star motivates future improvements 💛
-
-
-### ✅ How to Use
-1. Copy this entire content into a file named **`README.md`**.
-2. Place it in your project’s **root folder** (`MealMatrix/README.md`).
-3. Commit and push:
-   bash
-   git add README.md
-   git commit -m "Added professional project documentation"
-   git push
